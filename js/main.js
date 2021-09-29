@@ -85,13 +85,13 @@ ${key}|
     for (let i = 0; i < voices.length; i++) {
       const elemset = voices[i].abselem.elemset;
       for (let i = 0; i < elemset.length; i++) {
-        elemset[i][0].classList.remove("red");
+        elemset[i][0].classList.remove("current");
       }
     }
     // coloring
     const elemset = voices[coloredIndex].abselem.elemset;
     for (let i = 0; i < elemset.length; i++) {
-      elemset[i][0].classList.add("red");
+      elemset[i][0].classList.add("current");
     }
   }
 
