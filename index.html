@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Midi Bluetooth trainer</title>
+    <style>
+      html,
+      body {
+        overflow-y: hidden;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container > * {
+        zoom: 5;
+      }
+      .red {
+        stroke: red;
+        fill: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="title" style="text-align: center;">
+        <div style="margin-bottom: 3em">おんぷのれんしゅう</div>
+        <button id="start">スタート</button>
+      </div>
+      <div id="score"></div>
+      <div id="clear" style="display: none">
+        ぜんぶできたね！<br />すごいね！
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/abcjs/3.1.1/abcjs_basic-min.js"
+      integrity="sha512-rnTAS7IvuTbpAgzyJ0FwsshiqTiqejPc6mUu+SZOS+rjacr3jXMlfNTv1njdP+DK5n5Pl7mS/NPdFst4+uHkJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
